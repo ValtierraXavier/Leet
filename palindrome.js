@@ -1,4 +1,4 @@
-const num = 11333311
+const num = 113323311
 const palindrome = (x) => {
     const number = x.toString()
     let j = number.length - 1
