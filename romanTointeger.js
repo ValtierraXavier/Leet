@@ -1,6 +1,6 @@
 // WIP
 
-rom = "IV"
+rom = "VIIX"
 romKey = {
     I: 1,
     V: 5,
@@ -15,15 +15,13 @@ const romanToInt = (s) => {
     let sum = romKey[s[0]]
     for(let i = 0; i < s.length; i++){
         if(romKey[s[i]] <= romKey[s[(i+1)]]){
-        //    sum += romKey[s[(i+1)]]
-        greaterThan = true
+            sum += romKey[s[(i+1)]]
     }else if(romKey[s[i]] > romKey[s[(i+1)]]){
-        // sum -= romKey[s[(i + 1)]]
-        greaterThan = false
+            sum -= romKey[s[(i + 1)]]
         }
     }
     
-    console.log(greaterThan)
+    console.log(sum)
 }
 
 romanToInt(rom)
