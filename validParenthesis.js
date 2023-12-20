@@ -8,6 +8,7 @@
 
 // const string = "[()[]{]}}{"
 
+'([)]'
 
 // const validParenthesis = (s) => {
 //     let regular = 0;
