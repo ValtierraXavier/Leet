@@ -40,5 +40,5 @@ class MinStack {
     }
 }
 
-const stack = new MinStack()
-console.log(stack.getMin())
+
+console.log(new MinStack().getMin())
